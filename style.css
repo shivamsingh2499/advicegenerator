@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+body{
+    background:rgba(32,38,50,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.container{
+    position: relative;
+    padding:2rem;
+    width:500px;
+    height:300px;
+    background:rgba(49,58,73,255);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h5{
+    position: relative;
+    top:20px;
+    display:flex;
+    justify-content: center;
+    color:hsl(150, 100%, 66%);
+}
+.row{
+    position: relative;
+    top:40px;
+    text-align: center;
+    color:hsl(193, 38%, 86%);
+    font-size: 20px;
+}
+.img{
+    position: relative;
+    top:70px;
+    display: flex;
+    justify-content: center;
+    
+}
+.a{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:hsl(150, 100%, 66%);
+    bottom:0;
+    transform: translateY(50%);
+}
+.a:hover{
+    box-shadow: 0 0 15px hsla(150, 100%, 66%, 0.753);
+}
+.attribution{
+    position: relative;
+    top: 50px;
+}
+@media only screen and (max-width:550px){
+    .container{
+        width:375px;
+        height:290px;
+     
+    } 
+    .img{
+        width:300px;
+    }  
+    .row{
+        font-size:18px;
+    
+    }
+}
+@media only screen and (max-width:380px){
+    .container{
+        width:300px;
+        height:250px;
+     
+      
+    }
+    .img{
+        width:250px;
+    }  
+    .row{
+        font-size:15px;
+    }
+}
